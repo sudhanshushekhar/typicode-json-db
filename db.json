@@ -1,14 +1,463 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+	"licenseModel": {
+		"id": "14587cb9-ec98-11ec-951b-42010a160086",
+		"creationDate": "2022-06-15 10:44",
+		"lastModifiedDate": "",
+		"name": "Connected License Model",
+		"description": "Connected license model",
+		"state": "ENABLE",
+		"deployed": true,
+		"licenseModelAttributes": {
+			"licenseModelAttribute": [
+				{
+					"enforcementAttribute": {
+						"name": "CONCURRENCY_CRITERIA",
+						"dataType": "LIST",
+						"attributeValueChoice": {
+							"valueOption": [
+								"Per Login",
+								"Per User"
+							]
+						},
+						"displayOrder": 2.2,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LIMIT",
+						"subGroupName": ""
+					},
+					"value": "1",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "WRITE",
+						"featureAccessLevel": "WRITE",
+						"productAccessLevel": "WRITE",
+						"entitlementAccessLevel": "WRITE",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "NAMED_USER_LICENSE",
+						"dataType": "BOOLEAN",
+						"attributeValueChoice": null,
+						"displayOrder": 2.1,
+						"isSharedAttribute": true,
+						"associatedAttribute": null,
+						"groupName": "NO_GROUP",
+						"subGroupName": ""
+					},
+					"value": "FALSE",
+					"modificationAction": "NONE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "NONE",
+						"featureAccessLevel": "NONE",
+						"productAccessLevel": "NONE",
+						"entitlementAccessLevel": "NONE",
+						"entitlementItemAccessLevel": "WRITE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "NO_OF_NAMEDUSERS",
+						"dataType": "NUMERIC",
+						"attributeValueChoice": null,
+						"displayOrder": 2.2,
+						"isSharedAttribute": true,
+						"associatedAttribute": null,
+						"groupName": "NO_GROUP",
+						"subGroupName": ""
+					},
+					"value": "1",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "NONE",
+						"featureAccessLevel": "NONE",
+						"productAccessLevel": "NONE",
+						"entitlementAccessLevel": "NONE",
+						"entitlementItemAccessLevel": "WRITE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "USAGE_LIMIT",
+						"dataType": "DOUBLE",
+						"attributeValueChoice": null,
+						"displayOrder": 1.1,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LIMIT",
+						"subGroupName": ""
+					},
+					"value": "0",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "READ",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "MANDATORY",
+						"featureAccessLevel": "MANDATORY",
+						"productAccessLevel": "MANDATORY",
+						"entitlementAccessLevel": "MANDATORY",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": false,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "LICENSE_DURATION_IN_DAYS",
+						"dataType": "DOUBLE",
+						"attributeValueChoice": null,
+						"displayOrder": 1.2,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LICENSE_DURATION",
+						"subGroupName": ""
+					},
+					"value": "365",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "READ",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "MANDATORY",
+						"featureAccessLevel": "MANDATORY",
+						"productAccessLevel": "MANDATORY",
+						"entitlementAccessLevel": "MANDATORY",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "READ"
+					},
+					"nullable": false,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "VENDOR_INFO",
+						"dataType": "STRING",
+						"attributeValueChoice": null,
+						"displayOrder": 1.1,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "VENDOR",
+						"subGroupName": ""
+					},
+					"value": "",
+					"encodeToBase64": false,
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "WRITE",
+						"featureAccessLevel": "WRITE",
+						"productAccessLevel": "WRITE",
+						"entitlementAccessLevel": "WRITE",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "START_DATE",
+						"dataType": "NO_DATA_ALLOWED",
+						"attributeValueChoice": null,
+						"displayOrder": 2.1,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LICENSE_DURATION",
+						"subGroupName": ""
+					},
+					"value": "2022-01-01 00:00",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "READ",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "MANDATORY",
+						"featureAccessLevel": "MANDATORY",
+						"productAccessLevel": "MANDATORY",
+						"entitlementAccessLevel": "MANDATORY",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "WRITE"
+					},
+					"nullable": false,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "GRACE_TIME",
+						"dataType": "NUMERIC",
+						"attributeValueChoice": null,
+						"displayOrder": 3.1,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LICENSE_DURATION",
+						"subGroupName": ""
+					},
+					"value": "0",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "WRITE",
+						"featureAccessLevel": "WRITE",
+						"productAccessLevel": "WRITE",
+						"entitlementAccessLevel": "WRITE",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "GRACE_LIMIT",
+						"dataType": "NUMERIC",
+						"attributeValueChoice": null,
+						"displayOrder": 1.2,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LIMIT",
+						"subGroupName": ""
+					},
+					"value": "0",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "WRITE",
+						"featureAccessLevel": "WRITE",
+						"productAccessLevel": "WRITE",
+						"entitlementAccessLevel": "WRITE",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "CONCURRENCY_LIMIT",
+						"dataType": "DOUBLE",
+						"attributeValueChoice": null,
+						"displayOrder": 2.1,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LIMIT",
+						"subGroupName": ""
+					},
+					"value": "0",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "READ",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "MANDATORY",
+						"featureAccessLevel": "MANDATORY",
+						"productAccessLevel": "MANDATORY",
+						"entitlementAccessLevel": "MANDATORY",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": false,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "START_LICENSE_FROM_ACTIVATION_DATE",
+						"dataType": "BOOLEAN",
+						"attributeValueChoice": null,
+						"displayOrder": 1.1,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LICENSE_DURATION",
+						"subGroupName": ""
+					},
+					"value": "FALSE",
+					"modificationAction": "NONE",
+					"endUserPermission": "READ",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "MANDATORY",
+						"featureAccessLevel": "MANDATORY",
+						"productAccessLevel": "MANDATORY",
+						"entitlementAccessLevel": "MANDATORY",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "READ"
+					},
+					"nullable": false,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "END_DATE",
+						"dataType": "INTEGER",
+						"attributeValueChoice": null,
+						"displayOrder": 2.2,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LICENSE_DURATION",
+						"subGroupName": ""
+					},
+					"value": "2023-01-01 00:00",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "READ",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "MANDATORY",
+						"featureAccessLevel": "MANDATORY",
+						"productAccessLevel": "MANDATORY",
+						"entitlementAccessLevel": "MANDATORY",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "WRITE"
+					},
+					"nullable": false,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "DEPLOYMENT_TYPE",
+						"dataType": "LIST",
+						"attributeValueChoice": {
+							"valueOption": [
+								"On-premise Served",
+								"Cloud Served - Lease",
+								"Cloud Served - Connected",
+								"Cloud Served - Cloud LM"
+							]
+						},
+						"displayOrder": 1.1,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "NO_GROUP",
+						"subGroupName": ""
+					},
+					"value": "2",
+					"modificationAction": "NONE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "READ",
+						"featureAccessLevel": "READ",
+						"productAccessLevel": "READ",
+						"entitlementAccessLevel": "READ",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "USAGE_TYPE",
+						"dataType": "LIST",
+						"attributeValueChoice": {
+							"valueOption": [
+								"Count Based",
+								"Time Based"
+							]
+						},
+						"displayOrder": 3.1,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "NO_GROUP",
+						"subGroupName": ""
+					},
+					"value": "1",
+					"modificationAction": "NONE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "NONE",
+						"featureAccessLevel": "NONE",
+						"productAccessLevel": "NONE",
+						"entitlementAccessLevel": "NONE",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "LICENSE_TYPE",
+						"dataType": "LIST",
+						"attributeValueChoice": {
+							"valueOption": [
+								"Network",
+								"Standalone",
+								"Repository",
+								"Cloud"
+							]
+						},
+						"displayOrder": 1.2,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "NO_GROUP",
+						"subGroupName": ""
+					},
+					"value": "1",
+					"modificationAction": "NONE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "READ",
+						"featureAccessLevel": "READ",
+						"productAccessLevel": "READ",
+						"entitlementAccessLevel": "READ",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				},
+				{
+					"enforcementAttribute": {
+						"name": "GRACE_TIME_DURATION",
+						"dataType": "LIST",
+						"attributeValueChoice": {
+							"valueOption": [
+								"Hours",
+								"Days",
+								"Months",
+								"Count"
+							]
+						},
+						"displayOrder": 3.1,
+						"isSharedAttribute": false,
+						"associatedAttribute": null,
+						"groupName": "LIMIT",
+						"subGroupName": ""
+					},
+					"value": "2",
+					"modificationAction": "OVERWRITE",
+					"endUserPermission": "NONE",
+					"isvAccesslevel": {
+						"licenseModelAccessLevel": "NONE",
+						"featureAccessLevel": "NONE",
+						"productAccessLevel": "NONE",
+						"entitlementAccessLevel": "NONE",
+						"entitlementItemAccessLevel": "NONE",
+						"activationAccessLevel": "NONE"
+					},
+					"nullable": true,
+					"overwriteAllowed": true,
+					"regularExpression": ""
+				}
+			]
+		}
+	}
 }
